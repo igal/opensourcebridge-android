@@ -2,17 +2,17 @@
 <resources>
     
     <string name="app_name">Open Source Bridge - Schedule</string>
-    <string name="version">Android app version 2011.0</string>
+    <string name="version">Android app version 2012.0</string>
     
     <string name="about">Open Source Bridge is a new conference for developers working with open source technologies and for people interested in learning the open source way.  This app ensures you always have the conference schedule right in your pocket.</string>
     <string name="author">This project was started by Open Source Lab developer, Peter Krenesky.  The Oregon State University Open Source Lab is the home of growing, high-impact open source communities.\n\nhttp://osuosl.org</string>
     <string name="label_contributors">Contributors:</string>
-    <string name="contributors">Don Park, Sean Sullivan, Igal Koshevoy</string>
+    <string name="contributors">Don Park, Sean Sullivan, Igal Koshevoy, Jacob Helwig</string>
     <string name="share_text">I\'m attending \"</string>
-    <string name="share_text2">\&quot; #osb11</string>
+    <string name="share_text2">\&quot; #osb12</string>
     <string name="share_subject">This session at Open Source Bridge was interesting</string>
     <string name="loading__tagline">The conference for open source citizens</string>
-    <string name="loading__date_and_location">June 21–24, 2011 | Portland, Oregon</string>
-    <string name="app_description">Schedule for the Open Source Bridge 2011 conference in Portland, Oregon.</string>
+    <string name="loading__date_and_location">June 26–29, 2012 | Portland, Oregon</string>
+    <string name="app_description">Schedule for the Open Source Bridge 2012 conference in Portland, Oregon.</string>
     
 </resources>
