@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ocw-android="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/action_refresh"
+          android:icon="@drawable/ic_menu_refresh"
+          android:title="@string/refresh"
+          ocw-android:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_previous"
+          android:icon="@drawable/ic_menu_back"
+          android:title="@string/previousday" />
+    <item android:id="@+id/action_next"
+          android:icon="@drawable/ic_menu_forward"
+          android:title="@string/nextday" />
+    <item android:id="@+id/action_now"
+         android:title="@string/now" />
+    <item android:id="@+id/action_filter"
+          android:title="@string/filter" 
+    	  android:icon="@drawable/ic_menu_filter"
+    	  ocw-android:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_updated"
+          android:title="@string/updated" />
+    <item android:id="@+id/action_about"
+          android:title="@string/about" />
+    
+</menu>

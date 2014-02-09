@@ -1,0 +1,41 @@
+{
+  "timeout": "3600000",
+  "tracks": [
+    {
+      "track_id": 26,
+      "track_title": "Business",
+      "color": "green",
+      "color_text": "green"
+    },
+    {
+      "track_id": 27,
+      "track_title": "Chemistry",
+      "color": "red",
+      "color_text": "red"
+    },
+    {
+      "track_id": 28,
+      "track_title": "Cooking",
+      "color": "yellow",
+      "color_text": "yellow"
+    },
+    {
+      "track_id": 29,
+      "track_title": "Culture",
+      "color": "blue",
+      "color_text": "blue"
+    },
+    {
+      "track_id": 30,
+      "track_title": "Hacks",
+      "color": "magenta",
+      "color_text": "magenta"
+    },
+    {
+      "track_id": 31,
+      "track_title": "BOF",
+      "color": "gray",
+      "color_text": "gray"
+    }
+  ]
+}

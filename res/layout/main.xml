@@ -19,14 +19,14 @@
 	     android:layout_height="35dip"
 	     android:orientation="vertical"
 	     android:background="#116db6"
-	     android:padding="5px"
+	     android:padding="5dp"
 	     >
 		     <TextView
 	          android:id="@+id/date"
 	          android:layout_width="wrap_content"
 	          android:layout_height="wrap_content"
 	          android:textColor="#fff"
-	          android:textSize="18dip"
+	          android:textSize="18sp"
 	          />
 	    </LinearLayout>
         <View
@@ -40,7 +40,7 @@
 	    android:layout_height="fill_parent"
 	    android:background="#000"
 	    android:divider="#444"
-	    android:dividerHeight="1px"
+	    android:dividerHeight="1dp"
 	    />
     </LinearLayout>
     

@@ -1,0 +1,60 @@
+Data Format
+
+This is a description of data that the app expects.
+
+General information about data:
+
+	- All data is JSON
+	- Dates must be formatted: YYYY-MM-DDTHH:MM:SS-TZ:00 (Where TZ is 
+		the time zone difference from UTC)
+	- Optional fields must still be present but they can be empty.
+
+Schedule
+
+url = hostname/schedule.json
+
+This contains an array with all the events taking place at the conference, an event is an individual talk given by one or more speakers at one location and at one point during the conference.
+An event element contains the following.
+
+event_id: A unique integer that identifies the event.
+event_title: The title of the event.
+start_time: The date and time that the event starts.
+end_time: The date and time that the event ends.
+description: Information about the event.(Shown when event is selected). *
+room_title: Name or description of location for the event. *
+track_id: Unique integer to identify the type of event. *
+speaker_ids: Array of integers with the ids of the speakers at the event. *
+presenter: Host for the event, i.e. a Q&A mediator. *
+
+* Are optional, the rest must be present.
+
+Tracks
+
+url = hostname/tracks.json
+
+Holds the information of the different tracks that an event can pertain to.
+
+Each track is an array with the following.
+
+track_id: Unique integer that identifies the track.
+track_title: Title of the track.
+color - Main color for the track. This will be used in the event listing and event detail views.*
+color_text - Color to use for event titles on detail page. Generally this should be white or black depending on whether color is dark or light.*
+
+* Are optional although we recommend it for conferences with many events from different tracks that overlap on the timetable.
+
+Speaker
+
+url = hostname/speakers/id.json
+
+speaker_id: Unique integer that identifies the speaker.
+fullname: Full name of the speaker.
+biography: A short blurb about the speaker.*
+affiliation: Company/organisation they represent at the conference.*
+twitter : The speakers twitter handle without the ampersand @.*
+email: The public email for the speaker.*
+website: The speakers homepage.*
+blog: If the speaker has a separate blog address then it can go here.*
+linkedin: Full url to Linkedin profile.*
+
+* Are optional, the rest must be present.

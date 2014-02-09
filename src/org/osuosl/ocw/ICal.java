@@ -1,4 +1,4 @@
-package org.opensourcebridge.android2012;
+package org.osuosl.ocw;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -43,39 +43,39 @@ public class ICal {
 				} else if(line.equals("END:VEVENT"))  {
 					if (event != null){
 						// clean up description
-						event.brief = event.brief
+						event.setDescription(event.getDescription()
 												.replace("\\,", ",")
-												.replace("\\;", ";");
+												.replace("\\;", ";"));
 						
 			    		mEvents.add(event);
 			    		event = null;
 					}
 				} else if(line.startsWith("DTEND:"))  {
 					String str = line.substring(6);
-					event.end = (Date)formatter.parse(str);
+					event.setEnd_time((Date)formatter.parse(str));
 				
 				} else if(line.startsWith("DTSTART:"))  {
 					String str = line.substring(8);
-					event.start = (Date)formatter.parse(str);
+					event.setStart_time((Date)formatter.parse(str));
 				
 				} else if(line.startsWith("SUMMARY:"))  {
-					event.title = line.substring(8)
+					event.setEvent_title(line.substring(8)
 										.replace("\\,", ",")
-										.replace("\\;", ";");
+										.replace("\\;", ";"));
 				
 				} else if(line.startsWith("DESCRIPTION:"))  {
-					event.brief = line.substring(12);
+					event.setDescription(line.substring(12));
 				
 				} else if(line.startsWith(" "))  {
 					// continuation of description
-					event.brief += line.substring(1);
+					event.setDescription(event.getDescription() + line.substring(1));
 				
-				} else if(line.startsWith("URL:"))  {
-					event.url = line.substring(4);
-					event.id = event.url.substring(37);
-					
+//				} else if(line.startsWith("URL:"))  {
+////					event.url = line.substring(4);
+//					event.setEvent_id(Integer.parseInt(event.url.substring(37)));
+//					
 				} else if(line.startsWith("LOCATION:"))  {
-					event.location = line.substring(9);
+					event.setRoom_title(line.substring(9));
 				
 				} else if(line.startsWith("X-WR-CALNAME:"))  {
 					mName = line.substring(13); 

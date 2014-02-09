@@ -2,49 +2,48 @@
     android:layout_width="fill_parent" 
     android:layout_height="fill_parent" 
     xmlns:android="http://schemas.android.com/apk/res/android">
->
+
 <LinearLayout 
 	android:layout_width="fill_parent" 
-	android:layout_height="fill_parent" 
+	android:layout_height="wrap_content" 
 	android:padding="5dip"
 	android:orientation="vertical"
-	android:gravity="center"
-	xmlns:android="http://schemas.android.com/apk/res/android">
+	android:gravity="center">
+	<!-- 
+	xmlns:android="http://schemas.android.com/apk/res/android"> 
+	-->
 	
-	<ImageView
-	   android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-	   android:src="@drawable/icon_footer"
-	   android:layout_marginTop="5px"/>
+	
+	
 	
     <TextView 
         android:text="@string/about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5px"
-        android:layout_marginBottom="5px"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/osl"
-        android:layout_marginTop="10px" />
+        android:layout_marginTop="10dp" />
 
     <TextView 
         android:text="@string/author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5px"
-        android:layout_marginBottom="5px"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         />
     
     <TextView 
         android:text="@string/label_contributors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10px"
-        android:layout_marginBottom="5px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
         android:layout_gravity="left"
         android:textColor="#fff"
         />
@@ -52,7 +51,7 @@
         android:text="@string/contributors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5px"
+        android:layout_marginBottom="5dp"
         android:layout_gravity="left"
         />
     

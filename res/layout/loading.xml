@@ -29,13 +29,7 @@
         android:textColor="#08B9A6"
     />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Loading schedule..."
-        android:textColor="#000"
-        android:layout_marginTop="40dip"
-    />
+    
     
     <TextView
         android:layout_width="wrap_content" 

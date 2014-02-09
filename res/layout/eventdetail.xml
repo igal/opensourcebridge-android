@@ -19,19 +19,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
-                android:textSize="16dip"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginRight="5px"
-                android:layout_marginBottom="2px"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
                 />
                 <TextView
                 android:id="@+id/speaker"
                 android:layout_width="wrap_content" 
                 android:layout_height="23dip"
                 android:textColor="#111"
-                android:layout_marginLeft="5px"
+                android:layout_marginLeft="5dp"
                 />
                 <LinearLayout 
                 android:id="@+id/time_location"
@@ -42,13 +42,13 @@
                 >
 	                    <TextView
 	                    android:id="@+id/time"
-	                    android:layout_width="wrap_content"
+	                    android:layout_width="0dip"
 	                    android:layout_weight="80"
 	                    android:layout_height="wrap_content"
 	                    android:textColor="#000"
 	                    />
 	                    <TextView
-	                    android:id="@+id/location"
+	                    android:id="@+id/room_title"
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
 	                    android:textColor="#000"
@@ -66,7 +66,7 @@
             android:gravity="right"
             >  
                     
-                    <!--View android:layout_height="fill_parent" android:layout_width="1px" android:background="#444"/>
+                    <!--View android:layout_height="fill_parent" android:layout_width="1dp" android:background="#444"/>
                     <Button
                             android:id="@+id/favorite"
                             android:layout_width="wrap_content"
@@ -74,7 +74,7 @@
                             android:background="@drawable/button_favorite"
                             android:layout_gravity="right"
                         /-->
-                    <View android:layout_height="fill_parent" android:layout_width="1px" android:background="#444"/>
+                    <View android:layout_height="fill_parent" android:layout_width="1dp" android:background="#444"/>
                     <Button
                             android:id="@+id/show_description"
                             android:layout_width="wrap_content"
@@ -82,8 +82,8 @@
                             android:background="@drawable/button_description"
                             android:layout_gravity="right"
                         />
-                    <View android:layout_height="fill_parent" android:layout_width="1px" android:background="#444"/>
-                    <View android:layout_height="fill_parent" android:layout_width="1px" android:background="#444"/>
+                    <View android:layout_height="fill_parent" android:layout_width="1dp" android:background="#444"/>
+                    <View android:layout_height="fill_parent" android:layout_width="1dp" android:background="#444"/>
                     <Button
                             android:id="@+id/show_bio"
                             android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
                             android:background="@drawable/button_bio"
                             android:layout_gravity="right"
                         />
-                    <View android:layout_height="fill_parent" android:layout_width="1px" android:background="#444"/>
+                    <View android:layout_height="fill_parent" android:layout_width="1dp" android:background="#444"/>
                     <Button
                             android:id="@+id/share"
                             android:layout_width="wrap_content"
@@ -99,53 +99,53 @@
                             android:background="@drawable/button_share"
                             android:layout_gravity="right"
                         />
-                    <View android:layout_height="fill_parent" android:layout_width="1px" android:background="#444"/>
+                    <View android:layout_height="fill_parent" android:layout_width="1dp" android:background="#444"/>
                     
             </LinearLayout>
             <View
             android:layout_width="fill_parent" 
-            android:layout_height="1px"
+            android:layout_height="1dp"
             android:background="#444"
             />
             <ScrollView
             android:id="@+id/description_scroller"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:background="#171717"
             android:fillViewport="true"
             >
                   <LinearLayout 
-                    android:id="@+id/detail"
+                    android:id="@+id/detailDescription"
                     android:layout_width="fill_parent" 
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center_horizontal"
+                    android:gravity="left"
                     android:background="#171717"
-                    android:paddingTop="10px"
+                    android:paddingTop="10dp"
                     >
 	                   <TextView
 	                    android:id="@+id/description"
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
 	                    android:background="#171717"
-	                    android:padding="5px"
+	                    android:padding="10dp"
 	                    />
 				        <LinearLayout 
 		                    android:id="@+id/bio"
 		                    android:layout_width="wrap_content" 
 		                    android:layout_height="wrap_content"
 		                    android:orientation="vertical"
-		                    android:padding="5px"
+		                    android:padding="5dp"
 		                    android:visibility="gone"
 	                    />
-	                    <ImageView
-	                        android:layout_marginTop="20px"
-	                        android:layout_width="75px"
-	                        android:layout_height="31px"
-	                        android:layout_marginBottom="15px"
-	                        android:src="@drawable/icon_footer"
-	                        android:layout_gravity="center_horizontal"
-	                    />
+<!-- 	                    <ImageView -->
+<!-- 	                        android:layout_marginTop="20dp" -->
+<!-- 	                        android:layout_width="75dp" -->
+<!-- 	                        android:layout_height="31dp" -->
+<!-- 	                        android:layout_marginBottom="15dp" -->
+<!-- 	                        android:src="@drawable/icon_footer" -->
+<!-- 	                        android:layout_gravity="center_horizontal" -->
+<!-- 	                    /> -->
                    </LinearLayout>
             </ScrollView>    
         </LinearLayout>

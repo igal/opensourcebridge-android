@@ -4,12 +4,12 @@
  android:background="#13558A"
  xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView 
-        android:id="@+id/time"
+        android:id="@+id/timeSlot"
         android:layout_width="fill_parent"
         android:layout_height="15dip"
-        android:layout_marginTop="5px"
-        android:layout_marginBottom="5px"
-        android:paddingLeft="5px"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="5dp"
         android:textColor="#FFF"
         />
 </LinearLayout>

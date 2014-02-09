@@ -1,6 +1,6 @@
-package org.opensourcebridge.android2012;
+package org.osuosl.ocw;
 
-import org.opensourcebridge.android2012.R;
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,12 +8,15 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class Main extends Activity {
-        private final int SPLASH_DISPLAY_LENGTH = 100;
+	
+        private final int SPLASH_DISPLAY_LENGTH = 500;
         /** Called when the activity is first created. */
         @Override
         public void onCreate(Bundle bundle) {
                 super.onCreate(bundle);
+//                this.requestWindowFeature(getWindow().FEATURE_NO_TITLE);
                 setContentView(R.layout.loading);
+                
                 /* New Handler to start the Menu-Activity
                  * and close this Splash-Screen after some seconds.*/
                 new Handler().postDelayed(new Runnable(){

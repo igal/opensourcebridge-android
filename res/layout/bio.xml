@@ -10,7 +10,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/name"
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
-        android:textSize="18px"
+        android:textSize="18sp"
         android:textColor="#FFF"
      />
      
@@ -18,7 +18,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/affiliation"
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10px"
+        android:layout_marginBottom="10dp"
      />
      
      <LinearLayout 
@@ -28,10 +28,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 		android:visibility="gone"
 		>
 		 <TextView 
-		    android:text="Twitter:"
-            android:layout_width="60px" 
+		    android:text="@string/twitter"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10px"
+            android:layout_marginRight="10dp"
             android:textColor="#FFF"
 		  />
 	     <TextView 
@@ -47,10 +47,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:visibility="gone"
         >
          <TextView 
-            android:text="Website:"
-            android:layout_width="60px" 
+            android:text="@string/website"
+            android:layout_width="wrap_content" 
             android:layout_height="wrap_content"
-            android:layout_marginRight="10px"
+            android:layout_marginRight="10dp"
             android:textColor="#FFF"
           />
 	     <TextView 
@@ -66,10 +66,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:visibility="gone"
         >
          <TextView 
-            android:text="Blog:"
-            android:layout_width="60px" 
+            android:text="@string/blog"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10px"
+            android:layout_marginRight="10dp"
             android:textColor="#FFF"
           />
 	     <TextView 
@@ -85,10 +85,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:visibility="gone"
         >
          <TextView 
-            android:text="Identica:"
-            android:layout_width="60px" 
+            android:text="@string/identica"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10px"
+            android:layout_marginRight="10dp"
             android:textColor="#FFF"
           />
 	     <TextView 
@@ -101,8 +101,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
      <TextView 
         android:id="@+id/biography"
         android:layout_width="wrap_content" 
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15px"
+        android:layout_height="0dip"
+        android:layout_marginTop="15dp"
         android:layout_weight="100"
      />
      
